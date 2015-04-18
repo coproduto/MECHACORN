@@ -429,7 +429,11 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="10">
+    <constants number="17">
+      <constant name="Enemy1_Height">128</constant>
+      <constant name="Enemy1_Width">64</constant>
+      <constant name="Enemy1_H_Speed">4</constant>
+      <constant name="Enemy1_Jump_Speed">0</constant>
       <constant name="Player_Height">128</constant>
       <constant name="Player_Width">64</constant>
       <constant name="Player_H_Speed">6</constant>
@@ -440,6 +444,9 @@
       <constant name="Bullet_Deviation">8</constant>
       <constant name="World_Gravity">2</constant>
       <constant name="World_Fall_Max">28</constant>
+      <constant name="LifeBar_X">10</constant>
+      <constant name="LifeBar_Y">10</constant>
+      <constant name="LifeBar_Offset">35</constant>
     </constants>
   </ConfigConstants>
 </Config>

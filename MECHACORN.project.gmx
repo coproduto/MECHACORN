@@ -8,17 +8,23 @@
   <sprites name="sprites">
     <sprite>sprites\Spr_Title</sprite>
     <sprite>sprites\Spr_Plataforma</sprite>
+    <sprite>sprites\Spr_Plataforma_transponivel</sprite>
     <sprite>sprites\Spr_Player</sprite>
     <sprite>sprites\Spr_Tiro</sprite>
     <sprite>sprites\Spr_Enemy1</sprite>
     <sprite>sprites\Spr_Enemy2</sprite>
     <sprite>sprites\Spr_Enemy3</sprite>
+    <sprite>sprites\Spr_Life</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Scr_Colision_Plataform_Transp.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Obj_TitleScreen</object>
     <object>objects\Obj_Platform</object>
+    <object>objects\Obj_Plataform_Transp</object>
     <object>objects\Obj_Player</object>
     <object>objects\Obj_Tiro</object>
     <object>objects\Obj_Movable</object>
@@ -26,6 +32,7 @@
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
     <object>objects\Obj_Enemy3</object>
+    <object>objects\Obj_GUI</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
