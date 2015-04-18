@@ -30,6 +30,9 @@
 //default Movable declaration
 event_inherited();
 
+//player lives
+lives = 4;
+
 //directions
 Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)

@@ -32,6 +32,7 @@
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
     <object>objects\Obj_Enemy3</object>
+    <object>objects\Obj_GUI</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>

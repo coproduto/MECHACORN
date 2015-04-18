@@ -429,7 +429,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="16">
+    <constants number="17">
       <constant name="Enemy1_Height">128</constant>
       <constant name="Enemy1_Width">64</constant>
       <constant name="Enemy1_H_Speed">4</constant>
@@ -446,6 +446,7 @@
       <constant name="World_Fall_Max">28</constant>
       <constant name="LifeBar_X">10</constant>
       <constant name="LifeBar_Y">10</constant>
+      <constant name="LifeBar_Offset">35</constant>
     </constants>
   </ConfigConstants>
 </Config>
