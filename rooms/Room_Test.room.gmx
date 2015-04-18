@@ -76,12 +76,8 @@
     <instance objName="Obj_Platform" x="1408" y="544" name="inst_71731030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Platform" x="1472" y="544" name="inst_B09CF147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Platform" x="1536" y="544" name="inst_AAF905E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
-    <instance objName="Obj_Player" x="128" y="192" name="inst_001F9ED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
     <instance objName="Obj_Player" x="128" y="544" name="inst_001F9ED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Tiro" x="224" y="448" name="inst_1B71E9BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> origin/dev
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
