@@ -10,16 +10,22 @@
     <sprite>sprites\Spr_Plataforma</sprite>
     <sprite>sprites\Spr_Player</sprite>
     <sprite>sprites\Spr_Tiro</sprite>
+    <sprite>sprites\Spr_Enemy1</sprite>
+    <sprite>sprites\Spr_Enemy2</sprite>
+    <sprite>sprites\Spr_Enemy3</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\Obj_TitleScreen</object>
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Player</object>
     <object>objects\Obj_Tiro</object>
     <object>objects\Obj_Movable</object>
+    <object>objects\Obj_Enemy</object>
+    <object>objects\Obj_Enemy1</object>
+    <object>objects\Obj_Enemy2</object>
+    <object>objects\Obj_Enemy3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
