@@ -10,6 +10,7 @@
     <sprite>sprites\Spr_Plataforma</sprite>
     <sprite>sprites\Spr_Player</sprite>
     <sprite>sprites\Spr_Tiro</sprite>
+    <sprite>sprites\Spr_Vilao</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,6 +19,7 @@
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Player</object>
     <object>objects\Obj_Tiro</object>
+    <object>objects\Obj_Vilao</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
