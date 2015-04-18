@@ -21,11 +21,16 @@
     <object>objects\Obj_TitleScreen</object>
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Player</object>
+<<<<<<< HEAD
     <object>objects\Obj_Shot1</object>
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
     <object>objects\Obj_Enemy3</object>
     <object>objects\Obj_Enemy</object>
+=======
+    <object>objects\Obj_Tiro</object>
+    <object>objects\Obj_Movable</object>
+>>>>>>> origin/dev
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
