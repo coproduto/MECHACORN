@@ -13,11 +13,13 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\Obj_TitleScreen</object>
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Player</object>
     <object>objects\Obj_Tiro</object>
+    <object>objects\Obj_Movable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
