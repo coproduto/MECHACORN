@@ -17,6 +17,7 @@
     <sprite>sprites\Spr_Life</sprite>
     <sprite>sprites\Spr_Player_Bullet</sprite>
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
+    <sprite>sprites\Spr_Collectable_Life</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -31,12 +32,14 @@
     <object>objects\Obj_Tiro</object>
     <object>objects\Obj_Movable</object>
     <object>objects\Obj_Enemy</object>
+    <object>objects\Obj_Collectable</object>
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
     <object>objects\Obj_Enemy3</object>
     <object>objects\Obj_GUI</object>
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
+    <object>objects\Obj_Collectable_Life</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
