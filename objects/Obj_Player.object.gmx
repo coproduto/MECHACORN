@@ -84,12 +84,12 @@ if (Damage_Delay &gt; 0)
 }
 
 //Will take damage
-if (Control_Damage == 1 &amp;&amp; Damage_Delay == 0)
+if (Control_Damage == 1)
 {
     lives -= Damage_Qt;
     Damage_Qt = 0;
     
-    move_contact_solid(90, Movable_Jump_Speed);
+    move_contact_solid(90, 1);
     Movable_V_Speed = -Movable_Jump_Speed/2;
     
     Damage_Delay = Player_Damage_Delay;
