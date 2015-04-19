@@ -20,6 +20,7 @@
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
     <sprite>sprites\Spr_Collectable_Life</sprite>
     <sprite>sprites\Spr_Goal</sprite>
+    <sprite>sprites\Spr_Player_Squating</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -47,6 +48,9 @@
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Goal</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
     <room>rooms\Room_Test</room>
