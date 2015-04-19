@@ -344,7 +344,7 @@ newBullet.direction = bulletCounter * 180/numBullets; //(numBullets - bulletCoun
             <kind>1</kind>
             <string>///move enemy
 
-if (place_free(x + movement_dir* sprite_width , y+1))// this code assumes movement_direction's module is one
+if (place_free(x + movement_dir* sprite_width , y+1)&amp;&amp; distance_to_object(Obj_Player)&gt;100)// this code assumes movement_direction's module is one
 {
     movement_dir=-movement_dir
 }
