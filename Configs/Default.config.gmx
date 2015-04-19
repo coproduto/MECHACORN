@@ -446,7 +446,7 @@
       <constant name="Player_Damage_Delay">60</constant>
       <constant name="Tile_Size">64</constant>
       <constant name="Bullet_Delay">3</constant>
-      <constant name="Bullet_Speed">28</constant>
+      <constant name="Bullet_Speed">30</constant>
       <constant name="Bullet_Deviation">8</constant>
       <constant name="World_Gravity">2</constant>
       <constant name="World_Fall_Max">28</constant>
