@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Set the enemy's variables
 event_inherited();
-
+Enemy_Lives = 20;
 numBullets=10;
 
 Movable_Facing = 180;

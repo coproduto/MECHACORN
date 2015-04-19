@@ -29,7 +29,7 @@
 
 //default Movable declaration
 event_inherited();
-
+Enemy_Lives = 10;
 movement_dir = choose(1,-1);
 
 //directions

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Set the enemy's variables
 event_inherited();
-
+Enemy_Lives = 15;
 movement_dir = choose(1,-1);
 
 //directions
