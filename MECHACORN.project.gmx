@@ -22,6 +22,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Scr_Colision_Plataform_Transp.gml</script>
+    <script>scripts\Scr_Set_Default_Gun_Pos.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Obj_Player</object>
