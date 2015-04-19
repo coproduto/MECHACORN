@@ -98,12 +98,9 @@ Control_Horizontal = movement_dir;
             <string>///shoot player
 
 //if enemy is facing player and enemy can hit player
-if(     (abs(y - Obj_Player.y) &lt; 64) 
-    and (sign(movement_dir) == sign(Obj_Player.x - x))) {
-     
+if ( abs(y - Obj_Player.y) &lt; Tile_Size &amp;&amp; sign(movement_dir) == sign(Obj_Player.x - x) )
+{ 
     Control_Shoot = 1;
-} else {
-    Control_Shoot = 0;
 }
 </string>
           </argument>
