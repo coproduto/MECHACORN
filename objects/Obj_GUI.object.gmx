@@ -29,7 +29,7 @@
 
 var i;
 for( i = 0; i &lt; lives; i += 1) {
- draw_sprite(Spr_Life,0,16+i*LifeBar_Offset,16);
+ draw_sprite(Spr_Life,0,LifeBar_X+i*LifeBar_Offset,LifeBar_Y);
 }
 </string>
           </argument>
