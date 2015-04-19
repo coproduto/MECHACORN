@@ -40,15 +40,11 @@ if(movement_dir == 1) {
 }
 
 //constants
-Movable_Height = Enemy1_Height;
-Movable_Jump_Speed = Enemy1_Jump_Speed;
 Movable_Bullet_Delay = Enemy1_Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
 Movable_Obj_Tiro = Obj_Enemy_Bullet1;
-
-//Enemy Speed
-Movable_H_Speed = Enemy1_H_Speed;
+Movable_H_Speed = Enemy1_H_Speed; //Enemy Speed
 </string>
           </argument>
         </arguments>
@@ -73,7 +69,7 @@ Movable_H_Speed = Enemy1_H_Speed;
             <kind>1</kind>
             <string>///move enemy
 
-if (place_free(x + movement_dir* sprite_width , y+1))// this code assumes movement_direction's module is one
+if (place_free(x + movement_dir*Movable_H_Speed , y+1) &amp;&amp; Scr_Colision_Plataform_Transp(x + movement_dir*Movable_H_Speed, y+1, 0) == 0 )// this code assumes movement_direction's module is one
 {
     movement_dir=-movement_dir
 }

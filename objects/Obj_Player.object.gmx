@@ -33,21 +33,73 @@ event_inherited();
 //player lives
 lives = 4;
 
+//damage
+Damage_Delay = Player_Damage_Delay;
+Damage_Qt = 0;
+Control_Damage = 0;
+
 //directions
 Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
 
 //constants
-Movable_Height = Player_Height;
 Movable_Jump_Speed = Player_Jump_Speed;
 Movable_Bullet_Delay = Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
 Movable_Obj_Tiro = Obj_Player_Bullet1;
 Movable_H_Speed = Player_H_Speed; //Player Horizontal Speed
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Damage handler
 
-//Bullets start position
-Scr_Set_Default_Gun_Pos(self);
+//Damage cooldown
+if (Damage_Delay &gt; 0)
+{
+    Damage_Delay -= 1;
+    // *Fazer depois ele piscar*
+    if (Damage_Delay mod 12 == 11)
+    {
+        visible = false;
+    } 
+    else if (Damage_Delay mod 12 == 5)
+    {
+        visible = true;
+    }
+}
+
+//Will take damage
+if (Control_Damage == 1)
+{
+    lives -= Damage_Qt;
+    Damage_Qt = 0;
+    
+    move_contact_solid(90, 1);
+    Movable_V_Speed = -Movable_Jump_Speed/2;
+    
+    Damage_Delay = Player_Damage_Delay;
+    Control_Damage = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -70,7 +122,40 @@ Scr_Set_Default_Gun_Pos(self);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives -= 1;
+            <string>/// Do damage
+if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
+{
+    Control_Damage = 1;
+    Damage_Qt += 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Obj_Enemy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Do damage
+if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
+{
+    Control_Damage = 1;
+    Damage_Qt += 1;
+}
 </string>
           </argument>
         </arguments>
