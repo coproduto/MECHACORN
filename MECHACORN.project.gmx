@@ -10,7 +10,6 @@
     <sprite>sprites\Spr_Plataforma</sprite>
     <sprite>sprites\Spr_Plataforma_transponivel</sprite>
     <sprite>sprites\Spr_Player</sprite>
-    <sprite>sprites\Spr_Tiro</sprite>
     <sprite>sprites\Spr_Enemy1</sprite>
     <sprite>sprites\Spr_Enemy2</sprite>
     <sprite>sprites\Spr_Enemy3</sprite>
