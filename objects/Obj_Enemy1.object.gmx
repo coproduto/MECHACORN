@@ -66,7 +66,7 @@ if(movement_dir == 1) {
 //constants
 Movable_Height = Enemy1_Height;
 Movable_Jump_Speed = Enemy1_Jump_Speed;
-Movable_Bullet_Delay = Bullet_Delay;
+Movable_Bullet_Delay = Enemy1_Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
 Movable_Obj_Tiro = Obj_Enemy_Bullet1;
