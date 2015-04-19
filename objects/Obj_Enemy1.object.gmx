@@ -66,10 +66,10 @@ if(movement_dir == 1) {
 //constants
 Movable_Height = Enemy1_Height;
 Movable_Jump_Speed = Enemy1_Jump_Speed;
-Movable_Bullet_Delay = Bullet_Delay;
+Movable_Bullet_Delay = Enemy1_Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
-Movable_Obj_Tiro = Obj_Tiro;
+Movable_Obj_Tiro = Obj_Enemy_Bullet1;
 
 //Enemy Speed
 Movable_H_Speed = Enemy1_H_Speed;
@@ -146,6 +146,36 @@ movement_dir = -movement_dir;
             <string>///move enemy
 
 Control_Horizontal = movement_dir;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///shoot player
+
+//if enemy is facing player and enemy can hit player
+if(     (abs(y - Obj_Player.y) &lt; 64) 
+    and (sign(movement_dir) == sign(Obj_Player.x - x))) {
+     
+    Control_Shoot = 1;
+} else {
+    Control_Shoot = 0;
+}
 </string>
           </argument>
         </arguments>

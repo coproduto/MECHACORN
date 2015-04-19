@@ -429,7 +429,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="21">
+    <constants number="22">
       <constant name="Enemy2_Height">64</constant>
       <constant name="Enemy2_Width">64</constant>
       <constant name="Enemy2_H_Speed">10</constant>
@@ -438,6 +438,7 @@
       <constant name="Enemy1_Width">64</constant>
       <constant name="Enemy1_H_Speed">4</constant>
       <constant name="Enemy1_Jump_Speed">0</constant>
+      <constant name="Enemy1_Bullet_Delay">30</constant>
       <constant name="Player_Height">128</constant>
       <constant name="Player_Width">64</constant>
       <constant name="Player_H_Speed">6</constant>
