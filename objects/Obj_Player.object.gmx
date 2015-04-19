@@ -43,7 +43,7 @@ Movable_Jump_Speed = Player_Jump_Speed;
 Movable_Bullet_Delay = Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
-Movable_Obj_Tiro = Obj_Tiro;
+Movable_Obj_Tiro = Obj_Player_Bullet1;
 
 //Player Speed
 Movable_H_Speed = Player_H_Speed;
