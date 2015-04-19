@@ -103,7 +103,7 @@
     <instance objName="Obj_Plataform_Transp" x="1280" y="384" name="inst_B8C214C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1344" y="384" name="inst_2AB903D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1408" y="384" name="inst_D9FE6EB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_Enemy2" x="0" y="416" name="inst_2DE2756F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_Enemy2" x="64" y="384" name="inst_2DE2756F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Enemy1" x="480" y="32" name="inst_9E02315C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Enemy3" x="288" y="32" name="inst_DA8B10E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -43,16 +43,12 @@ Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
 
 //constants
-Movable_Height = Player_Height;
 Movable_Jump_Speed = Player_Jump_Speed;
 Movable_Bullet_Delay = Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
 Movable_Obj_Tiro = Obj_Player_Bullet1;
 Movable_H_Speed = Player_H_Speed; //Player Horizontal Speed
-
-//Bullets start position
-Scr_Set_Default_Gun_Pos(self);
 </string>
           </argument>
         </arguments>

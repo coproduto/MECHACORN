@@ -42,15 +42,7 @@ if(movement_dir == 1) {
 }
 
 //constants
-Movable_Height = Enemy2_Height;
-Movable_Jump_Speed = Enemy2_Jump_Speed;
-Movable_Bullet_Delay = Bullet_Delay;
-Movable_Bullet_Speed = Bullet_Speed;
-Movable_Bullet_Deviation = Bullet_Deviation;
-Movable_Obj_Tiro = Obj_Tiro;
-
-//Player Speed
-Movable_H_Speed = Enemy2_H_Speed;
+Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
 </string>
           </argument>
         </arguments>
@@ -74,11 +66,35 @@ Movable_H_Speed = Enemy2_H_Speed;
           <argument>
             <kind>1</kind>
             <string>///if player is close by, move toward him
+dx = x - Obj_Player.x;
+dy = abs(y-Movable_Height/2 - (Obj_Player.y - Obj_Player.Movable_Height/2));
 
-if(distance_to_object(Obj_Player) &lt; 300) {
-    if(x &gt; Obj_Player.x) {
+if(dy &lt; 5*Tile_Size &amp;&amp; abs(dx) &lt; 6*Tile_Size)
+{
+    if (dy &lt; 2.2*Tile_Size)
+    {
+        Movable_H_Speed = Enemy2_H_Speed;
+    }
+    else if (dy &lt; 3.2*Tile_Size)
+    {
+        Movable_H_Speed = Enemy2_H_Speed/2;
+    }
+    else
+    {
+        Movable_H_Speed = Enemy2_H_Speed/4;
+    }
+
+    if (abs(dx) &lt; Movable_H_Speed)
+    {
+        Movable_H_Speed = abs(dx);
+    }
+        
+    if(dx &gt; 0)
+    {
         Control_Horizontal = -1;
-    } else if(x &lt; Obj_Player.x) {
+    }
+    else if(dx &lt; 0)
+    {
         Control_Horizontal = +1;
     }
 }

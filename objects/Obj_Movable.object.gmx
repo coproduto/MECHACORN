@@ -32,8 +32,8 @@ Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
 
 //constants
-Movable_Height = Tile_Size;
-Movable_Width = Tile_Size;
+Movable_Height = sprite_height;
+Movable_Width = sprite_width;
 Movable_Jump_Speed = 0;
 Movable_Bullet_Delay = 0;
 Movable_Bullet_Speed = 0;
@@ -218,8 +218,8 @@ if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
     //calculates a random deviation so it won't be a perfect stream
     var deviation = random_range(-Movable_Bullet_Deviation, Movable_Bullet_Deviation);
     
-    pos_x = x+Movable_Gun_X[index];
-    pos_y = y+Movable_Gun_Y[index];
+    pos_x = x + Movable_Gun_X[index];
+    pos_y = y + Movable_Gun_Y[index];
     
     if (index == 0 || index == 2)
     {
@@ -231,7 +231,7 @@ if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
     }
     
     //create's the bullet
-    var tiro = instance_create(pos_x,pos_y, Movable_Obj_Tiro);
+    var tiro = instance_create(pos_x, pos_y, Movable_Obj_Tiro);
     tiro.direction = Movable_Facing;
     tiro.speed = Movable_Bullet_Speed;
     Movable_Gun_Delay = Movable_Bullet_Delay;
