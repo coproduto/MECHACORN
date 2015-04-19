@@ -32,8 +32,8 @@ Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
 
 //constants
-Movable_Height = Tile_Size;
-Movable_Width = Tile_Size;
+Movable_Height = sprite_height;
+Movable_Width = sprite_width;
 Movable_Jump_Speed = 0;
 Movable_Bullet_Delay = 0;
 Movable_Bullet_Speed = 0;

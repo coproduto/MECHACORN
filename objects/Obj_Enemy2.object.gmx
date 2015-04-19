@@ -42,12 +42,6 @@ if(movement_dir == 1) {
 }
 
 //constants
-Movable_Height = Enemy2_Height;
-Movable_Jump_Speed = Enemy2_Jump_Speed;
-Movable_Bullet_Delay = Bullet_Delay;
-Movable_Bullet_Speed = Bullet_Speed;
-Movable_Bullet_Deviation = Bullet_Deviation;
-Movable_Obj_Tiro = Obj_Tiro;
 Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
 </string>
           </argument>
