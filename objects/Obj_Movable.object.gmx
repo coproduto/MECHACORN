@@ -233,6 +233,8 @@ if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
     //create's the bullet
     var tiro = instance_create(pos_x, pos_y, Movable_Obj_Tiro);
     tiro.direction = Movable_Facing;
+    if (index &gt; 1) tiro.image_yscale = -1;
+    tiro.image_angle = Movable_Facing;
     tiro.speed = Movable_Bullet_Speed;
     Movable_Gun_Delay = Movable_Bullet_Delay;
 }
