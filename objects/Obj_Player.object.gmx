@@ -81,6 +81,14 @@ if (Damage_Delay &gt; 0)
 {
     Damage_Delay -= 1;
     // *Fazer depois ele piscar*
+    if (Damage_Delay mod 12 == 11)
+    {
+        visible = false;
+    } 
+    else if (Damage_Delay mod 12 == 5)
+    {
+        visible = true;
+    }
 }
 
 //Will take damage
