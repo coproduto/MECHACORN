@@ -17,6 +17,7 @@
     <sprite>sprites\Spr_Player_Bullet</sprite>
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
     <sprite>sprites\Spr_Collectable_Life</sprite>
+    <sprite>sprites\Spr_Missile</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,6 +41,8 @@
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
     <object>objects\Obj_Collectable_Life</object>
+    <object>objects\Obj_Missile</object>
+    <object>objects\Obj_Missile_Explosion</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
