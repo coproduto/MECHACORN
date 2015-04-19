@@ -41,17 +41,7 @@ Movable_Bullet_Deviation = 0;
 Movable_Obj_Tiro = Obj_Tiro;
 
 //Bullets start position
-Movable_Gun_X[0] = Movable_Width/2;
-Movable_Gun_Y[0] = -Movable_Height/2;
-
-Movable_Gun_X[1] = 0;
-Movable_Gun_Y[1] = -Movable_Height;
-
-Movable_Gun_X[2] = -Movable_Width/2;
-Movable_Gun_Y[2] = -Movable_Height/2;
-
-Movable_Gun_X[3] = 0;
-Movable_Gun_Y[3] = 0;
+Scr_Set_Default_Gun_Pos(self);
 
 //counter of frames to the next shoot
 Movable_Gun_Delay = 0; //if zero, you can shoot
