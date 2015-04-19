@@ -28,27 +28,15 @@
             <string>///Set the enemy's variables
 event_inherited();
 
-movement_dir = choose(1,-1);
 numBullets=10;
-//directions
-if(movement_dir == 1) {
-    Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
-    Movable_Side = 0; //the body is facing that direction (Left/Right)
-} else if(movement_dir == -1) {
-    Movable_Facing = 180;
-    Movable_Side = 180;
-}
+
+Movable_Facing = 180;
+Movable_Side = 180;
 
 //constants
-Movable_Height = Enemy1_Height;
-Movable_Jump_Speed = Enemy1_Jump_Speed;
-Movable_Bullet_Delay = Enemy1_Bullet_Delay;
 Movable_Bullet_Speed = Bullet_Speed;
 Movable_Bullet_Deviation = Bullet_Deviation;
 Movable_Obj_Tiro = Obj_Enemy_Bullet1;
-
-//Enemy Speed
-Movable_H_Speed = Enemy1_H_Speed;
 </string>
           </argument>
         </arguments>
@@ -97,8 +85,8 @@ Movable_H_Speed = Enemy1_H_Speed;
             <kind>1</kind>
             <string>///Bullet Hail
 
-var newBullet=instance_create (x, y, Obj_Enemy_Bullet1);
-newBullet.speed=Bullet_Speed;
+var newBullet=instance_create (x, y-Movable_Height/2, Movable_Obj_Tiro);
+newBullet.speed=Movable_Bullet_Speed;
 newBullet.direction = bulletCounter * 180/numBullets; //(numBullets - bulletCounter) pra ser da esquerda pra direita e 180/numBullets pra ser um semicírculo;
 </string>
           </argument>
@@ -321,36 +309,6 @@ newBullet.direction = bulletCounter * 180/numBullets; //(numBullets - bulletCoun
           <argument>
             <kind>0</kind>
             <string>10</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///move enemy
-
-if (place_free(x + movement_dir* sprite_width , y+1))// this code assumes movement_direction's module is one
-{
-    movement_dir=-movement_dir
-}
-
-Control_Horizontal = movement_dir;
-</string>
           </argument>
         </arguments>
       </action>
