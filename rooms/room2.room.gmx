@@ -68,6 +68,7 @@
     <instance objName="Obj_Platform" x="928" y="736" name="inst_A78A421C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Enemy3" x="352" y="320" name="inst_EEE2D51B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Enemy1" x="864" y="672" name="inst_604E0683" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_GUI" x="32" y="96" name="inst_FDBC0BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
