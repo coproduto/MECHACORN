@@ -33,6 +33,11 @@ event_inherited();
 //player lives
 lives = 4;
 
+//damage
+Damage_Delay = Player_Damage_Delay;
+Damage_Qt = 0;
+Control_Damage = 0;
+
 //directions
 Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
@@ -47,6 +52,49 @@ Movable_Obj_Tiro = Obj_Player_Bullet1;
 
 //Player Speed
 Movable_H_Speed = Player_H_Speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Damage handler
+
+//Damage cooldown
+if (Damage_Delay &gt; 0)
+{
+    Damage_Delay -= 1;
+    // *Fazer depois ele piscar*
+}
+
+//Will take damage
+if (Control_Damage == 1 &amp;&amp; Damage_Delay == 0)
+{
+    lives -= Damage_Qt;
+    Damage_Qt = 0;
+    
+    move_contact_solid(90, Movable_Jump_Speed);
+    Movable_V_Speed = -Movable_Jump_Speed/2;
+    
+    Damage_Delay = Player_Damage_Delay;
+    Control_Damage = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -69,7 +117,40 @@ Movable_H_Speed = Player_H_Speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives -= 1;
+            <string>/// Do damage
+if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
+{
+    Control_Damage = 1;
+    Damage_Qt += 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Obj_Enemy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Do damage
+if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
+{
+    Control_Damage = 1;
+    Damage_Qt += 1;
+}
 </string>
           </argument>
         </arguments>
