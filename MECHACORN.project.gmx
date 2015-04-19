@@ -36,22 +36,13 @@
     <object>objects\Obj_Collectable</object>
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
-    <object>objects\Obj_GUI</object>
-    <object>objects\Obj_Player_Bullet1</object>
-    <object>objects\Obj_Enemy_Bullet1</object>
-    <object>objects\Obj_Collectable_Life</object>
+    <object>objects\Obj_Enemy3</object>
     <object>objects\Obj_GUI</object>
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
     <object>objects\Obj_Collectable_Life</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Room_Title</room>
-    <room>rooms\Room_Test</room>
-    <room>rooms\room2</room>
-    <room>rooms\Room_Title</room>
-    <room>rooms\Room_Test</room>
-    <room>rooms\room2</room>
     <room>rooms\Room_Title</room>
     <room>rooms\Room_Test</room>
     <room>rooms\room2</room>
