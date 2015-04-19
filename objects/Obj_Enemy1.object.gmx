@@ -69,9 +69,9 @@ Movable_H_Speed = Enemy1_H_Speed; //Enemy Speed
             <kind>1</kind>
             <string>///move enemy
 
-if (place_free(x + movement_dir*Movable_H_Speed , y+1) &amp;&amp; Scr_Colision_Plataform_Transp(x + movement_dir*Movable_H_Speed, y+1, 0) == 0 )// this code assumes movement_direction's module is one
+if (!place_free(x+movement_dir, y) || ( place_free(x + movement_dir*Movable_H_Speed , y+1) &amp;&amp; Scr_Colision_Plataform_Transp(x + movement_dir*Movable_H_Speed, y+1, 0) == 0 ) )// this code assumes movement_direction's module is one
 {
-    movement_dir=-movement_dir
+    movement_dir=-movement_dir;
 }
 
 Control_Horizontal = movement_dir;

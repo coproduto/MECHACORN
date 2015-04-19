@@ -48,7 +48,6 @@
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Goal</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
     <room>rooms\Room_Test</room>
