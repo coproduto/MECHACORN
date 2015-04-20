@@ -19,7 +19,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 1;
+            <string>sprite_index = Spr_Intro_Player_Gun;
 visible = 1;
 
 </string>
@@ -46,7 +46,7 @@ visible = 1;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>30</string>
           </argument>
           <argument>
             <kind>0</kind>

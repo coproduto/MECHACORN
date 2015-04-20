@@ -89,6 +89,7 @@ Change_Tl = 0;
     timeline_index = Tl_Intro2;
     timeline_position = 0;
     timeline_loop = false;
+    global.Change_Tl = 0;
 }
 </string>
           </argument>

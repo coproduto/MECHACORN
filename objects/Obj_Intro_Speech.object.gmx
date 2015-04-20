@@ -64,6 +64,7 @@ Back_To_Work = 0;
 }
 if (global.Back_To_Work == 1)
 {
+    visible = 0;
     image_index += 1;
     global.Back_To_Work = 0;
 }
