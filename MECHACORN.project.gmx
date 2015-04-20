@@ -31,10 +31,12 @@
     <sprite>sprites\Spr_Villain</sprite>
     <sprite>sprites\Spr_Intro_Player_Falling</sprite>
     <sprite>sprites\Spr_Intro_Player_Gun</sprite>
+    <sprite>sprites\Spr_Intro_Speech</sprite>
     <sprite>sprites\Spr_Boss</sprite>
     <sprite>sprites\Spr_Cachorro</sprite>
     <sprite>sprites\Spr_Urso_braco</sprite>
     <sprite>sprites\Spr_Honey</sprite>
+    <sprite>sprites\Spr_Intro_Player_Bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -70,6 +72,7 @@
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Collectable_Missile</object>
     <object>objects\Obj_Intro_Player</object>
+    <object>objects\Obj_Intro_Speech</object>
     <object>objects\Obj_Tiro</object>
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
@@ -80,14 +83,18 @@
     <object>objects\Obj_Intro_Villain</object>
     <object>objects\Obj_Boss</object>
     <object>objects\Obj_Enemy3_Arm</object>
+    <object>objects\Obj_Intro_Player_Bullet</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
+    <timeline>timelines\Tl_Intro2</timeline>
+    <timeline>timelines\Tl_Intro3</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
     <room>rooms\Boss_Room</room>
     <room>rooms\Room_Intro</room>
+    <room>rooms\Room_Intro2</room>
     <room>rooms\Room_Test</room>
     <room>rooms\Room_Game_Over</room>
     <room>rooms\Phase_3</room>
