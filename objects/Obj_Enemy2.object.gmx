@@ -32,9 +32,6 @@ event_inherited();
 Enemy_Lives = 10;
 movement_dir = choose(1,-1);
 
-image_speed = 0;
-animationDelay = 0;
-
 //directions
 if(movement_dir == 1) {
     Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
@@ -46,46 +43,6 @@ if(movement_dir == 1) {
 
 //constants
 Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Animation and movement
-
-var old_x = x;
-//default Movable End Step
-event_inherited();
-
-//change the animation
-if (old_x == x)
-{
-    image_index = 0;
-    animationDelay = 0;   
-}
-else if (animationDelay == 0)
-{
-    image_index = 1-image_index;
-    animationDelay = 3;
-}
-else animationDelay -= 1;
 </string>
           </argument>
         </arguments>

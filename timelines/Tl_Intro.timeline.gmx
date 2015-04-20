@@ -105,7 +105,7 @@ image_index = 2;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>Obj_Intro_Speech</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
