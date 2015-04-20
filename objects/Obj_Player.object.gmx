@@ -159,6 +159,18 @@ if (isSquating == 1) //Player Squating
        Movable_Gun_Y[2] += 14;   
     }
 }
+else if (Control_Vertical == 1)
+{
+    sprite_index = Spr_Player_Squating;
+    image_index = 2;
+    if (isAnimationHigh == 1)
+    {
+       isAnimationHigh = 0;
+       Movable_Gun_Y[0] += 14;
+       Movable_Gun_Y[1] += 14;
+       Movable_Gun_Y[2] += 14;   
+    }
+}
 else
 {
     sprite_index = Spr_Player;
