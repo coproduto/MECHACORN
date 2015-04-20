@@ -74,11 +74,8 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
-<<<<<<< HEAD
     <object>objects\Obj_Boss</object>
-=======
     <object>objects\Obj_Enemy3_Arm</object>
->>>>>>> origin/dev
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
