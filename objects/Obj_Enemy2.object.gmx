@@ -32,6 +32,15 @@ event_inherited();
 Enemy_Lives = 10;
 movement_dir = choose(1,-1);
 
+//To follow the Player
+max_walk_delay = 50;
+walk_delay=max_walk_delay;
+last_control_horizontal=1;
+last_control_h_speed=Enemy2_H_Speed;
+
+//Animation
+image_speed=0;
+
 //directions
 if(movement_dir == 1) {
     Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
@@ -99,37 +108,56 @@ Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///if player is close by, move toward him
+            <string>///if player is close by, move towards him
 dx = x - Obj_Player.x;
 dy = abs(y-Movable_Height/2 - (Obj_Player.y - Obj_Player.Movable_Height/2));
-
-if(dy &lt; 5*Tile_Size &amp;&amp; abs(dx) &lt; 6*Tile_Size)
+if(dy &lt; 5*Tile_Size &amp;&amp; abs(dx) &lt; 6*Tile_Size &amp;&amp; 3*Tile_Size&lt;abs(dx))
 {
     if (dy &lt; 2.2*Tile_Size)
     {
         Movable_H_Speed = Enemy2_H_Speed;
+        last_movable_speed=Movable_H_Speed;
     }
     else if (dy &lt; 3.2*Tile_Size)
     {
-        Movable_H_Speed = Enemy2_H_Speed/2;
+        Movable_H_Speed= Enemy2_H_Speed/2;
+        last_movable_speed=Movable_H_Speed;
     }
     else
     {
         Movable_H_Speed = Enemy2_H_Speed/4;
+        last_movable_speed=Movable_H_Speed;
     }
 
     if (abs(dx) &lt; Movable_H_Speed)
     {
         Movable_H_Speed = abs(dx);
+        last_movable_speed=Movable_H_Speed;
     }
         
     if(dx &gt; 0)
     {
         Control_Horizontal = -1;
+        last_control_Horizontal=Control_Horizontal;
     }
     else if(dx &lt; 0)
     {
         Control_Horizontal = +1;
+        last_control_Horizontal=Control_Horizontal;
+    }
+}
+else if (abs(dx)&lt;=3*Tile_Size)
+{
+    if (walk_delay==0)
+    {
+        walk_delay=max_walk_delay;
+        last_control_Horizontal*=(-1);
+        Control_horizontal=last_control_Horizontal;
+    }
+    else
+    {
+        walk_delay--;
+        Control_horizontal=last_control_Horizontal;
     }
 }
 </string>
