@@ -21,6 +21,7 @@
     <sprite>sprites\Spr_Collectable_Life</sprite>
     <sprite>sprites\Spr_Goal</sprite>
     <sprite>sprites\Spr_Player_Squating</sprite>
+    <sprite>sprites\Spr_Missile</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -47,6 +48,8 @@
     <object>objects\Obj_Enemy_Bullet1</object>
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Goal</object>
+    <object>objects\Obj_Missile</object>
+    <object>objects\Obj_Missile_Explosion</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
