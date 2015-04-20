@@ -28,6 +28,9 @@
     <sprite>sprites\Spr_Exit_Bt</sprite>
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
+    <sprite>sprites\Spr_Villain</sprite>
+    <sprite>sprites\Spr_Intro_Player_Falling</sprite>
+    <sprite>sprites\Spr_Intro_Player_Gun</sprite>
     <sprite>sprites\Spr_Boss</sprite>
     <sprite>sprites\Spr_Cachorro</sprite>
     <sprite>sprites\Spr_Urso_braco</sprite>
@@ -74,6 +77,7 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
+    <object>objects\Obj_Intro_Villain</object>
     <object>objects\Obj_Boss</object>
     <object>objects\Obj_Enemy3_Arm</object>
   </objects>
