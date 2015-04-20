@@ -49,15 +49,14 @@ Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
 Movable_Side = 0; //the body is facing that direction (Left/Right)
 
 //gun position
-Movable_Gun_X[0] = 40;
+Movable_Gun_X[0] = 45;
 Movable_Gun_Y[0] = -118;
 Movable_Gun_X[1] = -10;
-Movable_Gun_Y[1] = -138;
-Movable_Gun_X[2] = -40;
+Movable_Gun_Y[1] = -145;
+Movable_Gun_X[2] = -45;
 Movable_Gun_Y[2] = -118;
-Movable_Gun_X[3] = 0;
-Movable_Gun_Y[3] = 0;
-
+Movable_Gun_X[3] = -30;
+Movable_Gun_Y[3] = -52;
 
 //constants
 Movable_Width = Player_Width;
@@ -112,7 +111,7 @@ else if (x &gt; room_width - Movable_Width/2 &amp;&amp; Control_Horizontal == 1)
 }
 
 //Avoid moving while squating on ground
-if (Control_Vertical==1 and ((not place_free (x, y+1)) or Scr_Collision_Plataform_Transp (x, y+1, sprite_width)))
+if (Control_Vertical==1 and ((not place_free (x, y+1)) or Scr_Collision_Plataform_Transp (x, y+1, Movable_Width)))
 {
     isSquating=1;    
     if (Control_Horizontal!=0)
@@ -674,7 +673,7 @@ Scr_Die();
             <kind>1</kind>
             <string>///Died in a pit
 
-if (x &gt; room_height)
+if (y &gt; room_height)
 {
     Scr_Die();
 }
