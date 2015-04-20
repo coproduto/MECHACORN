@@ -69,7 +69,7 @@
     <instance objName="Obj_Platform" x="1152" y="736" name="inst_6197E891" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Platform" x="1280" y="736" name="inst_0CB1940C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Platform" x="1344" y="736" name="inst_5479F1FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_Enemy1_2" x="1280" y="704" name="inst_9C13ED1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_Enemy1_2" x="1280" y="672" name="inst_9C13ED1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1024" y="544" name="inst_5FE7C5FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1088" y="544" name="inst_07057EAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1152" y="544" name="inst_B83C03D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
