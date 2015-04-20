@@ -3,7 +3,7 @@
   <spriteName>Spr_Player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>6</depth>
   <persistent>0</persistent>
   <parentName>Obj_Movable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -77,12 +77,13 @@ Movable_H_Speed = Player_H_Speed; //Player Horizontal Speed
 if (Damage_Delay &gt; 0)
 {
     Damage_Delay -= 1;
-    // *Fazer depois ele piscar*
-    if (Damage_Delay mod 12 == 11)
+    
+    //Change sprite to blink
+    if (Damage_Delay mod 8 == 7)
     {
         visible = false;
     } 
-    else if (Damage_Delay mod 12 == 5)
+    else if (Damage_Delay mod 8 == 3)
     {
         visible = true;
     }
@@ -94,6 +95,7 @@ if (Control_Damage == 1)
     lives -= Damage_Qt;
     Damage_Qt = 0;
     
+    //Little jump
     move_contact_solid(90, 1);
     Movable_V_Speed = -Movable_Jump_Speed/2;
     

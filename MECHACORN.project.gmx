@@ -19,10 +19,15 @@
     <sprite>sprites\Spr_Player_Bullet</sprite>
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
     <sprite>sprites\Spr_Collectable_Life</sprite>
+    <sprite>sprites\Spr_Intro_Player</sprite>
     <sprite>sprites\Spr_Goal</sprite>
     <sprite>sprites\Spr_Player_Squating</sprite>
+    <sprite>sprites\Spr_Missile</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Bg_Forest</background>
+    <background>background\Bg_Castle</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Scr_Colision_Plataform_Transp.gml</script>
@@ -46,13 +51,18 @@
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
     <object>objects\Obj_Collectable_Life</object>
+    <object>objects\Obj_Collectable_Missile</object>
+    <object>objects\Obj_Intro_Player</object>
     <object>objects\Obj_Goal</object>
+    <object>objects\Obj_Missile</object>
+    <object>objects\Obj_Missile_Explosion</object>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\timeline0</timeline>
+    <timeline>timelines\Tl_Intro</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
+    <room>rooms\Room_Intro</room>
     <room>rooms\Room_Test</room>
     <room>rooms\room2</room>
   </rooms>
