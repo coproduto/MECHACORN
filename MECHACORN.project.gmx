@@ -29,6 +29,7 @@
     <sprite>sprites\Spr_Exit_Bt</sprite>
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
+    <sprite>sprites\Spr_Boss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -70,12 +71,14 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
+    <object>objects\Obj_Boss</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
+    <room>rooms\Boss_Room</room>
     <room>rooms\Room_Intro</room>
     <room>rooms\Room_Test</room>
     <room>rooms\room2</room>
