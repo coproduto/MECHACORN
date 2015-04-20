@@ -429,7 +429,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="18">
+    <constants number="19">
       <constant name="Enemy2_H_Speed">10</constant>
       <constant name="Enemy1_H_Speed">4</constant>
       <constant name="Enemy1_Bullet_Delay">30</constant>
@@ -442,6 +442,7 @@
       <constant name="Tile_Size">64</constant>
       <constant name="Bullet_Delay">3</constant>
       <constant name="Bullet_Speed">30</constant>
+      <constant name="Missile_Speed">20</constant>
       <constant name="Bullet_Deviation">8</constant>
       <constant name="World_Gravity">2</constant>
       <constant name="World_Fall_Max">28</constant>
