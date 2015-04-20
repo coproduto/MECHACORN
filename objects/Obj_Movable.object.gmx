@@ -85,14 +85,14 @@ Movable_V_Speed = 0;
 //vertical movement
 
 var over_Plataform_Transp;
-if Scr_Colision_Plataform_Transp(x, y+1, Movable_Width) //collision with Obj_Plataform_Transp
+if Scr_Collision_Plataform_Transp(x, y+1, Movable_Width) //collision with Obj_Plataform_Transp
 {
     over_Plataform_Transp = 1;
     if Movable_V_Speed == 0 &amp;&amp; Control_Vertical == 1 &amp;&amp; Control_Jump == 1 //want to go down
     {
         Movable_Want_Fall = 1; //condition to pass throug an Obj_Plataform_Transp
     }
-    else if Scr_Colision_Plataform_Transp(x, y, Movable_Width) //it's inside an Obj_Plataform_Transp
+    else if Scr_Collision_Plataform_Transp(x, y, Movable_Width) //it's inside an Obj_Plataform_Transp
     {
         Movable_Want_Fall = 1;
     }
@@ -130,14 +130,14 @@ if Movable_V_Speed &gt; 0 //moving down
     {
         move_contact_solid(270, Movable_V_Speed);
     }
-    else if Scr_Colision_Plataform_Transp(x, y+Movable_V_Speed, Movable_Width) == 0 //Won't collide with an Obj_Plataform_Transp
+    else if Scr_Collision_Plataform_Transp(x, y+Movable_V_Speed, Movable_Width) == 0 //Won't collide with an Obj_Plataform_Transp
     {
         move_contact_solid(270, Movable_V_Speed);
     }
     else //May collide with an Obj_Plataform_Transp
     {
         var i = 1;
-        while (i &lt; Movable_V_Speed &amp;&amp; Scr_Colision_Plataform_Transp(x, y+i ,Movable_Width) == 0)
+        while (i &lt; Movable_V_Speed &amp;&amp; Scr_Collision_Plataform_Transp(x, y+i ,Movable_Width) == 0)
         {
             i += 1;
         }
