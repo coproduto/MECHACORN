@@ -93,15 +93,29 @@ Movable_H_Speed = Player_H_Speed; //Player Horizontal Speed
 
 var needToReflect = Movable_Side;
 var indexModule = (image_index % 4);
-
+var old_x = x;
 if (needToReflect == 0) //reflect gun position
 {
     Movable_Gun_X[1] = -Movable_Gun_X[1];
     Movable_Gun_X[3] = -Movable_Gun_X[3];
 }
 
+if (x &lt; Movable_Width/2 &amp;&amp; Control_Horizontal == -1)
+{   //left wall
+    Control_Horizontal = 0;
+}
+else if (x &gt; room_width - Movable_Width/2 &amp;&amp; Control_Horizontal == 1)
+{   //right wall
+    Control_Horizontal = 0;
+}
+
 //default Movable End Step
 event_inherited();
+
+if (old_x == x) //player don't moved horizontaly
+{
+    Control_Horizontal = 0;
+}
 
 if (needToReflect == 0) //undo gun reflection
 {
@@ -146,7 +160,7 @@ else
     {
         if (animationDelay == 0)
         {
-            animationDelay = 5;
+            animationDelay = 3;
             Scr_Jig();
         }
         else
@@ -589,6 +603,58 @@ Control_Vertical -= 1;
             <kind>1</kind>
             <string>///Control_Horizontal -= 1;
 Control_Horizontal -= 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///died
+Scr_Die();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Died in a pit
+
+if (x &gt; room_height)
+{
+    Scr_Die();
+}
 </string>
           </argument>
         </arguments>

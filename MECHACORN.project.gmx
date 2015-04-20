@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\Spr_Title</sprite>
+    <sprite>sprites\Spr_Game_Over</sprite>
     <sprite>sprites\Spr_Plataforma</sprite>
     <sprite>sprites\Spr_Plataforma_transponivel</sprite>
     <sprite>sprites\Spr_Player</sprite>
@@ -24,6 +25,8 @@
     <sprite>sprites\Spr_Player_Squating</sprite>
     <sprite>sprites\Spr_Missile</sprite>
     <sprite>sprites\Spr_Mecha_Sleep</sprite>
+    <sprite>sprites\Spr_Contiune_Bt</sprite>
+    <sprite>sprites\Spr_Exit_Bt</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -34,10 +37,14 @@
     <script>scripts\Scr_Collision_Plataform_Transp.gml</script>
     <script>scripts\Scr_Set_Default_Gun_Pos.gml</script>
     <script>scripts\Scr_Jig.gml</script>
+    <script>scripts\Scr_Die.gml</script>
+    <script>scripts\Scr_Restart.gml</script>
+    <script>scripts\Scr_Game_Over.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Obj_Player</object>
     <object>objects\Obj_TitleScreen</object>
+    <object>objects\Obj_Game_Over</object>
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Plataform_Transp</object>
     <object>objects\Obj_Tiro</object>
@@ -58,6 +65,8 @@
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
     <object>objects\Obj_Missile_Explosion</object>
+    <object>objects\Obj_Continue_Bt</object>
+    <object>objects\Obj_Exit_Bt</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
@@ -67,6 +76,7 @@
     <room>rooms\Room_Intro</room>
     <room>rooms\Room_Test</room>
     <room>rooms\room2</room>
+    <room>rooms\Room_Game_Over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
