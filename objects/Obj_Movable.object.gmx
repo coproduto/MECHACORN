@@ -213,6 +213,7 @@ if (Movable_Gun_Delay &gt; 0)
 //if want (and can) shoot
 if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
 {
+    var isAerial = place_free (x, y+1) &amp;&amp; (!Scr_Collision_Plataform_Transp (x, y+1, Movable_Width));
     var index = Movable_Facing/90;
 
     //calculates a random deviation so it won't be a perfect stream
@@ -221,20 +222,41 @@ if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
     pos_x = x + Movable_Gun_X[index];
     pos_y = y + Movable_Gun_Y[index];
     
-    if (index == 0 || index == 2)
+    if (index == 1)
     {
-        pos_y += deviation;
+        pos_x += deviation;
+    }
+    else if (index == 3 &amp;&amp; isAerial)
+    {
+        if (Movable_Side == 0)
+        {
+            pos_x += deviation - 8;
+        }
+        else
+        {
+            pos_x += deviation + 8;
+        }
+        pos_y += 30;
     }
     else
     {
-        pos_x += deviation;
+        pos_y += deviation;
     }
     
     //create's the bullet
     var tiro = instance_create(pos_x, pos_y, Movable_Obj_Tiro);
-    tiro.direction = Movable_Facing;
     if (index &gt; 1) tiro.image_yscale = -1;
-    tiro.image_angle = Movable_Facing;
+    
+    if (index == 3 &amp;&amp; !isAerial)
+    {
+        tiro.direction = Movable_Side;
+        tiro.image_angle = Movable_Side;
+    }
+    else
+    {
+        tiro.direction = Movable_Facing;
+        tiro.image_angle = Movable_Facing;
+    }
     tiro.speed = Movable_Bullet_Speed;
     Movable_Gun_Delay = Movable_Bullet_Delay;
 }
