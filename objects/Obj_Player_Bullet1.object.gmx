@@ -3,7 +3,7 @@
   <spriteName>Spr_Player_Bullet</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>4</depth>
+  <depth>7</depth>
   <persistent>0</persistent>
   <parentName>Obj_Tiro</parentName>
   <maskName>&lt;undefined&gt;</maskName>
