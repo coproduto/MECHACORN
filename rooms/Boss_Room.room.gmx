@@ -130,6 +130,7 @@
     <instance objName="Obj_Plataform_Transp" x="1088" y="576" name="inst_73361DE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Plataform_Transp" x="1024" y="576" name="inst_FA223140" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_Boss" x="992" y="1920" name="inst_CD6095E5" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_GUI" x="0" y="0" name="inst_32B69CD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
