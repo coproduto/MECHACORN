@@ -443,6 +443,7 @@
       <constant name="Bullet_Collision_Chance">25</constant>
       <constant name="Bullet_Delay">3</constant>
       <constant name="Bullet_Speed">30</constant>
+      <constant name="Missile_Speed">20</constant>
       <constant name="Bullet_Deviation">8</constant>
       <constant name="World_Gravity">2</constant>
       <constant name="World_Fall_Max">28</constant>
