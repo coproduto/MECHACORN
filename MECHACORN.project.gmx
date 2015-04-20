@@ -30,6 +30,7 @@
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Intro_Speech</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
+    <sprite>sprites\Spr_Villain</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -72,10 +73,12 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
+    <object>objects\Obj_Intro_Villain</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
     <timeline>timelines\Tl_Intro2</timeline>
+    <timeline>timelines\Tl_Intro_Bullet1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>

@@ -80,14 +80,27 @@ Can_End_Speech = 0;
           <argument>
             <kind>1</kind>
             <string>///Change speech
-
-if (image_index &lt; 4) 
+if (image_index &lt; 2)
 {
-    image_index +=1;
+    if (image_index &lt; 1) 
+    {
+        image_index +=1;
+    }
+    else
+    {
+        Can_End_Speech = 1;
+    }
 }
 else
 {
-    Can_End_Speech = 1;
+    if (image_index &lt; 4) 
+    {
+        image_index +=1;
+    }
+    else
+    {
+        Can_End_Speech = 1;
+    }
 }
 </string>
           </argument>
