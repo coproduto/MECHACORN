@@ -30,6 +30,10 @@
 image_speed = 0;
 
 Can_End_Speech = 0;
+
+globalvar Back_To_Work;
+
+Back_To_Work = 0;
 </string>
           </argument>
         </arguments>
@@ -55,7 +59,13 @@ Can_End_Speech = 0;
             <string>if (Can_End_Speech == 1)
 {
     global.Change_Tl = 1;
-    instance_destroy();
+    visible = 0;
+    Can_End_Speech = 0;
+}
+if (global.Back_To_Work == 1)
+{
+    image_index += 1;
+    global.Back_To_Work = 0;
 }
 </string>
           </argument>
