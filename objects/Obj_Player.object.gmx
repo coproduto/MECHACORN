@@ -132,9 +132,9 @@ if (Control_Vertical == 1) //Player Squating
      if (isAnimationHigh == 1)
      {
         isAnimationHigh = 0;
-        Movable_Gun_Y[0] -= 14;
-        Movable_Gun_Y[1] -= 14;
-        Movable_Gun_Y[2] -= 14;   
+        Movable_Gun_Y[0] += 14;
+        Movable_Gun_Y[1] += 14;
+        Movable_Gun_Y[2] += 14;   
      }
 }
 else
