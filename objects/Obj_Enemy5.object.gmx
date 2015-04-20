@@ -3,7 +3,7 @@
   <spriteName>Spr_Enemy3</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>8</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>Obj_Enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -87,7 +87,7 @@ Movable_Obj_Tiro = Obj_Enemy_Bullet1;
 
 var newBullet=instance_create (x, y-Movable_Height/2, Movable_Obj_Tiro);
 newBullet.speed=Movable_Bullet_Speed;
-newBullet.direction = bulletCounter * 180/numBullets; //(numBullets - bulletCounter) pra ser da esquerda pra direita e 180/numBullets pra ser um semicírculo;
+newBullet.direction = bulletCounter *(- 180)/numBullets; //(numBullets - bulletCounter) pra ser da esquerda pra direita e 180/numBullets pra ser um semicírculo;
 </string>
           </argument>
         </arguments>

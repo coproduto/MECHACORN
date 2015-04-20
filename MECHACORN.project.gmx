@@ -11,13 +11,17 @@
     <sprite>sprites\Spr_Plataforma_transponivel</sprite>
     <sprite>sprites\Spr_Player</sprite>
     <sprite>sprites\Spr_Enemy1</sprite>
+    <sprite>sprites\Spr_Enemy4</sprite>
     <sprite>sprites\Spr_Enemy2</sprite>
     <sprite>sprites\Spr_Enemy3</sprite>
+    <sprite>sprites\Spr_Enemy5</sprite>
     <sprite>sprites\Spr_Life</sprite>
     <sprite>sprites\Spr_Player_Bullet</sprite>
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
     <sprite>sprites\Spr_Collectable_Life</sprite>
     <sprite>sprites\Spr_Intro_Player</sprite>
+    <sprite>sprites\Spr_Goal</sprite>
+    <sprite>sprites\Spr_Player_Squating</sprite>
     <sprite>sprites\Spr_Missile</sprite>
   </sprites>
   <backgrounds name="background">
@@ -41,12 +45,15 @@
     <object>objects\Obj_Enemy1</object>
     <object>objects\Obj_Enemy2</object>
     <object>objects\Obj_Enemy3</object>
+    <object>objects\Obj_Enemy3_2</object>
+    <object>objects\Obj_Enemy1_2</object>
     <object>objects\Obj_GUI</object>
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Collectable_Missile</object>
     <object>objects\Obj_Intro_Player</object>
+    <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
     <object>objects\Obj_Missile_Explosion</object>
   </objects>
