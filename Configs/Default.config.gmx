@@ -448,8 +448,8 @@
       <constant name="World_Gravity">2</constant>
       <constant name="World_Fall_Max">28</constant>
       <constant name="LifeBar_Offset">35</constant>
-      <constant name="LifeBar_X">16</constant>
-      <constant name="LifeBar_Y">16</constant>
+      <constant name="LifeBar_X">32</constant>
+      <constant name="LifeBar_Y">64</constant>
     </constants>
   </ConfigConstants>
 </Config>
