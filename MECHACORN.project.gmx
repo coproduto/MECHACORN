@@ -39,6 +39,8 @@
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
     <background>background\Bg_Castle</background>
+    <background>background\Bg_IceCave</background>
+    <background>background\Bg_Temple</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
