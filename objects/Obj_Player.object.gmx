@@ -55,7 +55,7 @@ Movable_Gun_X[1] = -10;
 Movable_Gun_Y[1] = -145;
 Movable_Gun_X[2] = -45;
 Movable_Gun_Y[2] = -118;
-Movable_Gun_X[3] = -30;
+Movable_Gun_X[3] = -75;
 Movable_Gun_Y[3] = -52;
 
 //constants
