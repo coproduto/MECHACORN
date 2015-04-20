@@ -30,6 +30,7 @@
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Intro_Speech</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
+    <sprite>sprites\Spr_Cachorro</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -81,8 +82,8 @@
     <room>rooms\Room_Title</room>
     <room>rooms\Room_Intro</room>
     <room>rooms\Room_Test</room>
-    <room>rooms\room2</room>
     <room>rooms\Room_Game_Over</room>
+    <room>rooms\Phase_3</room>
     <room>rooms\Phase_1</room>
   </rooms>
   <help>
