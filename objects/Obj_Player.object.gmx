@@ -470,6 +470,34 @@ if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Obj_Enemy_Bullet3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Do damage
+if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
+{
+    Control_Damage = 1;
+    Damage_Qt += 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Obj_Enemy">
       <action>
         <libid>1</libid>

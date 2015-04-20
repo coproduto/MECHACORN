@@ -32,6 +32,8 @@
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
     <sprite>sprites\Spr_Cachorro</sprite>
+    <sprite>sprites\Spr_Victory</sprite>
+    <sprite>sprites\Spr_Credits</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -50,6 +52,7 @@
     <object>objects\Obj_Player</object>
     <object>objects\Obj_TitleScreen</object>
     <object>objects\Obj_Game_Over</object>
+    <object>objects\Obj_Victory</object>
     <object>objects\Obj_Platform</object>
     <object>objects\Obj_Plataform_Transp</object>
     <object>objects\Obj_Movable</object>
@@ -75,6 +78,9 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
+    <object>objects\Obj_Intro_Villain</object>
+    <object>objects\Obj_Boss</object>
+    <object>objects\Obj_Credits</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
@@ -82,11 +88,12 @@
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
     <room>rooms\Room_Intro</room>
-    <room>rooms\Room_Test</room>
-    <room>rooms\Room_Game_Over</room>
-    <room>rooms\Phase_3</room>
     <room>rooms\Phase_1</room>
-    <room>rooms\Phase_2</room>
+    <room>rooms\Phase_3</room>
+    <room>rooms\Room_Victory</room>
+    <room>rooms\Room_Game_Over</room>
+    <room>rooms\Room_Credits</room>
+    <room>rooms\Room_Test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
