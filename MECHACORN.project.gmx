@@ -18,6 +18,7 @@
     <sprite>sprites\Spr_Enemy_Bullet</sprite>
     <sprite>sprites\Spr_Collectable_Life</sprite>
     <sprite>sprites\Spr_Intro_Player</sprite>
+    <sprite>sprites\Spr_Missile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -46,6 +47,8 @@
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Collectable_Missile</object>
     <object>objects\Obj_Intro_Player</object>
+    <object>objects\Obj_Missile</object>
+    <object>objects\Obj_Missile_Explosion</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
