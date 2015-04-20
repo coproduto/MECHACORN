@@ -11,10 +11,9 @@
     <sprite>sprites\Spr_Plataforma</sprite>
     <sprite>sprites\Spr_Plataforma_transponivel</sprite>
     <sprite>sprites\Spr_Player</sprite>
-    <sprite>sprites\Spr_Enemy1</sprite>
     <sprite>sprites\Spr_Enemy4</sprite>
-    <sprite>sprites\Spr_Enemy2</sprite>
-    <sprite>sprites\Spr_Enemy3</sprite>
+    <sprite>sprites\Spr_Esquilo</sprite>
+    <sprite>sprites\Spr_Urso</sprite>
     <sprite>sprites\Spr_Enemy5</sprite>
     <sprite>sprites\Spr_Life</sprite>
     <sprite>sprites\Spr_Player_Bullet</sprite>
@@ -30,6 +29,8 @@
     <sprite>sprites\Spr_Collectable_Missile</sprite>
     <sprite>sprites\Spr_Missile_Explosion</sprite>
     <sprite>sprites\Spr_Cachorro</sprite>
+    <sprite>sprites\Spr_Urso_braco</sprite>
+    <sprite>sprites\Spr_Honey</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -61,6 +62,7 @@
     <object>objects\Obj_GUI</object>
     <object>objects\Obj_Player_Bullet1</object>
     <object>objects\Obj_Enemy_Bullet1</object>
+    <object>objects\Obj_Enemy_Bullet3</object>
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Collectable_Missile</object>
     <object>objects\Obj_Intro_Player</object>
@@ -71,6 +73,7 @@
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
+    <object>objects\Obj_Enemy3_Arm</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
