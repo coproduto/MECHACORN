@@ -24,6 +24,7 @@
     <sprite>sprites\Spr_Player_Squating</sprite>
     <sprite>sprites\Spr_Missile</sprite>
     <sprite>sprites\Spr_Collectable_Missile</sprite>
+    <sprite>sprites\Spr_Intro_Speech</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -58,9 +59,11 @@
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
     <object>objects\Obj_Missile_Explosion</object>
+    <object>objects\Obj_Intro_Speech</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
+    <timeline>timelines\Tl_Intro2</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
