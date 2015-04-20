@@ -222,9 +222,21 @@ if(Control_Shoot == 1 &amp;&amp; Movable_Gun_Delay == 0)
     pos_x = x + Movable_Gun_X[index];
     pos_y = y + Movable_Gun_Y[index];
     
-    if (index == 1 || (index == 3 &amp;&amp; isAerial))
+    if (index == 1)
     {
         pos_x += deviation;
+    }
+    else if (index == 3 &amp;&amp; isAerial)
+    {
+        if (Movable_Side == 0)
+        {
+            pos_x += deviation - 8;
+        }
+        else
+        {
+            pos_x += deviation + 8;
+        }
+        pos_y += 30;
     }
     else
     {

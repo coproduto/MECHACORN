@@ -28,6 +28,7 @@
     <sprite>sprites\Spr_Contiune_Bt</sprite>
     <sprite>sprites\Spr_Exit_Bt</sprite>
     <sprite>sprites\Spr_Collectable_Missile</sprite>
+    <sprite>sprites\Spr_Missile_Explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Forest</background>
@@ -68,6 +69,7 @@
     <object>objects\Obj_Missile_Explosion</object>
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
+    <object>objects\Spr_Missile_Explosion_Dmg</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>

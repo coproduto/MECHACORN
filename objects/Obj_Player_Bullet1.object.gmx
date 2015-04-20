@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>7</depth>
   <persistent>0</persistent>
-  <parentName>Obj_Player</parentName>
+  <parentName>Obj_Tiro</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="4" ename="Obj_Enemy_Bullet1">

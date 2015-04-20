@@ -55,7 +55,7 @@ Movable_Gun_X[1] = -10;
 Movable_Gun_Y[1] = -145;
 Movable_Gun_X[2] = -45;
 Movable_Gun_Y[2] = -118;
-Movable_Gun_X[3] = -30;
+Movable_Gun_X[3] = -75;
 Movable_Gun_Y[3] = -52;
 
 //constants
@@ -151,6 +151,18 @@ if (isSquating == 1) //Player Squating
             animationDelay-=1;
         }
     }
+    if (isAnimationHigh == 1)
+    {
+       isAnimationHigh = 0;
+       Movable_Gun_Y[0] += 14;
+       Movable_Gun_Y[1] += 14;
+       Movable_Gun_Y[2] += 14;   
+    }
+}
+else if (Control_Vertical == 1)
+{
+    sprite_index = Spr_Player_Squating;
+    image_index = 2;
     if (isAnimationHigh == 1)
     {
        isAnimationHigh = 0;
