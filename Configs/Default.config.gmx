@@ -429,8 +429,9 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="20">
-      <constant name="Enemy2_H_Speed">10</constant>
+    <constants number="21">
+      <constant name="PI">3.14159</constant>
+      <constant name="Enemy2_H_Speed">8</constant>
       <constant name="Enemy1_H_Speed">4</constant>
       <constant name="Enemy1_Bullet_Delay">12</constant>
       <constant name="Enemy4_Bullet_Delay">4</constant>
