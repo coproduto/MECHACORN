@@ -84,7 +84,7 @@ part_type_alpha2(global.villain_part, 0.6, 0.8);
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>Room_Intro</room>
+            <room>Phase_1</room>
           </argument>
         </arguments>
       </action>
