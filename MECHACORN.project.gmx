@@ -91,6 +91,7 @@
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
     <object>objects\Obj_Missile_Explosion</object>
+    <object>objects\Obj_Villain_Cloud</object>
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
