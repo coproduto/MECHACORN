@@ -164,7 +164,7 @@ braco.image_angle = 315;
             <string>///Bullet Hail
 
 var angle = bulletCounter * (-180)/numBullets;
-var newBullet=instance_create (braco.x, braco.y, Movable_Obj_Tiro);
+var newBullet=instance_create (braco.x + 110*cos(angle*PI/180), braco.y - 110*sin(angle*PI/180), Movable_Obj_Tiro);
 
 newBullet.speed=Movable_Bullet_Speed;
 

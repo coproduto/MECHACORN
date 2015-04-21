@@ -45,7 +45,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Obj_Intro_Villain.y = 640;
+            <string>instance_create(Obj_Intro_Villain.x, Obj_Intro_Villain.y, Obj_Villain_Cloud);
+Obj_Intro_Villain.y = 640;
 </string>
           </argument>
         </arguments>
@@ -71,7 +72,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x -= 100;
+            <string>instance_create(Obj_Intro_Villain.x, Obj_Intro_Villain.y, Obj_Villain_Cloud);
+x -= 100;
 </string>
           </argument>
         </arguments>

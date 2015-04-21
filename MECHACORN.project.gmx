@@ -118,15 +118,15 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
-    <room>rooms\Boss_Room</room>
     <room>rooms\Room_Intro</room>
     <room>rooms\Room_Intro2</room>
-    <room>rooms\Room_Test</room>
-    <room>rooms\Phase_3</room>
     <room>rooms\Phase_1</room>
+    <room>rooms\Phase_3</room>
+    <room>rooms\Boss_Room</room>
     <room>rooms\Room_Victory</room>
     <room>rooms\Room_Game_Over</room>
     <room>rooms\Room_Credits</room>
+    <room>rooms\Room_Test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
