@@ -16,6 +16,7 @@
     <sound>sound\Snd_Shot</sound>
     <sound>sound\Snd_GetLife</sound>
     <sound>sound\Jump</sound>
+    <sound>sound\Snd_Evil</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Spr_Title</sprite>
@@ -103,6 +104,7 @@
     <object>objects\Obj_MusicDangerZone</object>
     <object>objects\Obj_MusicFinalBoss</object>
     <object>objects\Obj_MusicUnicorn</object>
+    <object>objects\Obj_MusicEvil</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
