@@ -132,6 +132,7 @@
     <instance objName="Obj_Boss" x="992" y="1920" name="inst_CD6095E5" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_GUI" x="0" y="0" name="inst_32B69CD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_MusicFinalBoss" x="0" y="32" name="inst_508353DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_Boss" x="576" y="1856" name="inst_642F4AFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
