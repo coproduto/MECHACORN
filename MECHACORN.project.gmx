@@ -94,6 +94,7 @@
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
     <object>objects\Obj_Missile_Explosion</object>
+    <object>objects\Obj_Villain_Cloud</object>
     <object>objects\Obj_Continue_Bt</object>
     <object>objects\Obj_Exit_Bt</object>
     <object>objects\Spr_Missile_Explosion_Dmg</object>
@@ -104,6 +105,10 @@
     <object>objects\Obj_Credits</object>
     <object>objects\Obj_Mecha_Sleep</object>
     <object>objects\Obj_Intro_Player2</object>
+    <object>objects\Obj_MusicBossFortress</object>
+    <object>objects\Obj_MusicDangerZone</object>
+    <object>objects\Obj_MusicFinalBoss</object>
+    <object>objects\Obj_MusicUnicorn</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>

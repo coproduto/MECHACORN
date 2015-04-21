@@ -8,6 +8,65 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Particle system for the explosion
+global.explosion_system = part_system_create();
+part_system_depth(global.explosion_system, -10);
+
+//Particles
+global.explosion_part = part_type_create();
+part_type_shape(global.explosion_part, pt_shape_star);
+part_type_scale(global.explosion_part, 0.05, 0.05);
+part_type_size(global.explosion_part, 1, 1, 1,0);
+part_type_orientation(global.explosion_part, 0, 72, 0, 0, false );
+part_type_colour_hsv(global.explosion_part, 0, 255, 230, 255, 255, 255);
+part_type_speed(global.explosion_part, 5, 10, 0, 0);
+part_type_direction(global.explosion_part, 0, 360, 0, 40);
+part_type_life(global.explosion_part, 20, 20);
+part_type_alpha1(global.explosion_part, 0.7);
+
+global.explosion_part2 = part_type_create();
+part_type_shape(global.explosion_part2, pt_shape_spark);
+part_type_scale(global.explosion_part2, 0.05, 0.05);
+part_type_size(global.explosion_part2, 1, 1, 1,0);
+part_type_orientation(global.explosion_part2, 0, 72, 0, 0, false );
+part_type_speed(global.explosion_part2, 5, 10, 0, 0);
+part_type_direction(global.explosion_part2, 0, 360, 0, 40);
+part_type_life(global.explosion_part2, 20, 20);
+part_type_alpha1(global.explosion_part2, 0.7);
+
+//Villain Cloud
+global.villain_part = part_type_create();
+part_type_shape(global.villain_part, pt_shape_smoke);
+part_type_scale(global.villain_part, 0.08, 0.08);
+part_type_size(global.villain_part, 1, 1, 1, 0);
+part_type_orientation(global.villain_part, 0, 360, 0, 0, false );
+part_type_colour_hsv(global.villain_part, 200, 200, 130, 255, 50, 150);
+part_type_speed(global.villain_part, 5, 8, 0, 0);
+part_type_direction(global.villain_part, 0, 360, 0, 40);
+part_type_life(global.villain_part, 20, 20);
+part_type_alpha2(global.villain_part, 0.6, 0.8);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
