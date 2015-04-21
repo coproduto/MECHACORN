@@ -86,15 +86,10 @@ Movable_Obj_Tiro = Obj_Enemy_Bullet3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Bullet Hail
-
-var angle = bulletCounter * 180/numBullets;
-var newBullet=instance_create (x + 20*cos(angle), y-Movable_Height/2 + 20*sin(angle), Movable_Obj_Tiro);
-
-newBullet.speed=Movable_Bullet_Speed;
-
-braco.image_angle = angle;
-newBullet.direction = angle; //(numBullets - bulletCounter) pra ser da esquerda pra direita e 180/numBullets pra ser um semicírculo;
+            <string>with (braco)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
