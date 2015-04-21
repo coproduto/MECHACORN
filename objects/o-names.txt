@@ -1,0 +1,52 @@
+ O volume na unidade C ‚ Windows8_OS
+ O N£mero de S‚rie do Volume ‚ 46C8-9914
+
+ Pasta de C:\Users\Hrod\Desktop\MECHACORN\objects
+
+20/04/2015  21:15    <DIR>          .
+20/04/2015  21:15    <DIR>          ..
+20/04/2015  21:15                 0 o-names.txt
+20/04/2015  21:07             6.457 Obj_Boss.object.gmx
+20/04/2015  21:00             1.022 Obj_Collectable.object.gmx
+20/04/2015  21:00             2.794 Obj_Collectable_Life.object.gmx
+20/04/2015  21:00             2.778 Obj_Collectable_Missile.object.gmx
+20/04/2015  21:00             1.678 Obj_Continue_Bt.object.gmx
+20/04/2015  21:00             1.662 Obj_Credits.object.gmx
+20/04/2015  21:00             4.824 Obj_Enemy.object.gmx
+20/04/2015  21:07            10.552 Obj_Enemy1.object.gmx
+20/04/2015  21:00            10.679 Obj_Enemy1_2.object.gmx
+20/04/2015  21:07            10.720 Obj_Enemy2.object.gmx
+20/04/2015  21:00            11.939 Obj_Enemy3.object.gmx
+20/04/2015  21:07            11.942 Obj_Enemy3_2.object.gmx
+20/04/2015  21:00             1.019 Obj_Enemy3_Arm.object.gmx
+19/04/2015  20:32             3.972 Obj_Enemy4.object.gmx
+19/04/2015  20:32             9.796 Obj_Enemy5.object.gmx
+19/04/2015  13:13             6.032 Obj_Enemy_4.object.gmx
+20/04/2015  21:00             1.513 Obj_Enemy_Bullet1.object.gmx
+20/04/2015  21:07             2.003 Obj_Enemy_Bullet3.object.gmx
+20/04/2015  21:00             1.678 Obj_Exit_Bt.object.gmx
+20/04/2015  21:00             1.506 Obj_Game_Over.object.gmx
+20/04/2015  21:07             3.476 Obj_Goal.object.gmx
+20/04/2015  21:07             1.775 Obj_GUI.object.gmx
+20/04/2015  21:00             3.393 Obj_Intro_Player.object.gmx
+20/04/2015  19:44             3.488 Obj_Intro_Speech.object.gmx
+20/04/2015  21:07             1.661 Obj_Intro_Villain.object.gmx
+20/04/2015  21:00             2.492 Obj_Missile.object.gmx
+20/04/2015  21:00            10.552 Obj_Missile_Explosion.object.gmx
+20/04/2015  21:00             8.619 Obj_Movable.object.gmx
+20/04/2015  21:07             1.773 Obj_MusicBossFortress.object.gmx
+20/04/2015  21:07             1.771 Obj_MusicDangerZone.object.gmx
+20/04/2015  21:07             1.770 Obj_MusicFinalBoss.object.gmx
+20/04/2015  21:07             1.768 Obj_MusicUnicorn.object.gmx
+20/04/2015  21:00             1.033 Obj_Plataform_Transp.object.gmx
+20/04/2015  21:00             1.020 Obj_Platform.object.gmx
+20/04/2015  21:07            26.309 Obj_Player.object.gmx
+20/04/2015  21:00             4.278 Obj_Player_Bullet1.object.gmx
+20/04/2015  21:00             2.005 Obj_Tiro.object.gmx
+20/04/2015  21:07             4.031 Obj_TitleScreen.object.gmx
+20/04/2015  21:00             1.664 Obj_Victory.object.gmx
+19/04/2015  10:12             1.014 Obj_Vilao.object.gmx
+20/04/2015  21:07            10.370 Obj_Villain_Cloud.object.gmx
+20/04/2015  21:00             5.780 Spr_Missile_Explosion_Dmg.object.gmx
+              43 arquivo(s)        204.608 bytes
+               2 pasta(s)   621.666.746.368 bytes dispon¡veis
