@@ -98,6 +98,10 @@
     <object>objects\Obj_Boss</object>
     <object>objects\Obj_Enemy3_Arm</object>
     <object>objects\Obj_Credits</object>
+    <object>objects\Obj_MusicBossFortress</object>
+    <object>objects\Obj_MusicDangerZone</object>
+    <object>objects\Obj_MusicFinalBoss</object>
+    <object>objects\Obj_MusicUnicorn</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
