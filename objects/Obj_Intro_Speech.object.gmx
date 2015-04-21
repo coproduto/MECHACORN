@@ -62,9 +62,16 @@ Back_To_Work = 0;
     visible = 0;
     Can_End_Speech = 0;
 }
+if (Can_End_Speech == 2)
+{
+    global.Change_Tl = 2;
+    visible = 0;
+    Can_End_Speech = 0;
+}
 if (global.Back_To_Work == 1)
 {
-    visible = 0;
+    visible = 1;
+    Obj_Intro_Player.visible = 0;
     image_index += 1;
     global.Back_To_Work = 0;
 }
@@ -110,7 +117,7 @@ else
     }
     else
     {
-        Can_End_Speech = 1;
+        Can_End_Speech = 2;
     }
 }
 </string>

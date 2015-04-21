@@ -43,10 +43,12 @@
     <sprite>sprites\Spr_Villain</sprite>
     <sprite>sprites\Spr_Intro_Player_Falling</sprite>
     <sprite>sprites\Spr_Intro_Player_Gun</sprite>
+    <sprite>sprites\Spr_Intro_Speech</sprite>
     <sprite>sprites\Spr_Boss</sprite>
     <sprite>sprites\Spr_Cachorro</sprite>
     <sprite>sprites\Spr_Urso_braco</sprite>
     <sprite>sprites\Spr_Honey</sprite>
+    <sprite>sprites\Spr_Intro_Player_Bullet</sprite>
     <sprite>sprites\Spr_Victory</sprite>
     <sprite>sprites\Spr_Credits</sprite>
   </sprites>
@@ -87,6 +89,7 @@
     <object>objects\Obj_Collectable_Life</object>
     <object>objects\Obj_Collectable_Missile</object>
     <object>objects\Obj_Intro_Player</object>
+    <object>objects\Obj_Intro_Speech</object>
     <object>objects\Obj_Tiro</object>
     <object>objects\Obj_Goal</object>
     <object>objects\Obj_Missile</object>
@@ -98,7 +101,10 @@
     <object>objects\Obj_Intro_Villain</object>
     <object>objects\Obj_Boss</object>
     <object>objects\Obj_Enemy3_Arm</object>
+    <object>objects\Obj_Intro_Player_Bullet</object>
     <object>objects\Obj_Credits</object>
+    <object>objects\Obj_Mecha_Sleep</object>
+    <object>objects\Obj_Intro_Player2</object>
     <object>objects\Obj_MusicBossFortress</object>
     <object>objects\Obj_MusicDangerZone</object>
     <object>objects\Obj_MusicFinalBoss</object>
@@ -106,11 +112,15 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
+    <timeline>timelines\Tl_Intro2</timeline>
+    <timeline>timelines\Tl_Intro3</timeline>
+    <timeline>timelines\Tl_Intro4</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
     <room>rooms\Boss_Room</room>
     <room>rooms\Room_Intro</room>
+    <room>rooms\Room_Intro2</room>
     <room>rooms\Room_Test</room>
     <room>rooms\Phase_3</room>
     <room>rooms\Phase_1</room>
