@@ -3,71 +3,21 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>8</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Obj_Enemy</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///declaration of enemy's variables
-
-//default Movable declaration
-event_inherited();
-Enemy_Lives = 10;
-movement_dir = choose(1,-1);
-
-//To follow the Player
-max_walk_delay = 50;
-walk_delay=max_walk_delay;
-last_control_horizontal=1;
-last_control_h_speed=Enemy2_H_Speed;
-reachedPlayer=0;
-
-//Animation
-image_speed=0;
-
-//directions
-if(movement_dir == 1) {
-    Movable_Facing = 0; //the head is looking at that direction (Up/Down/Left/Right)
-    Movable_Side = 0; //the body is facing that direction (Left/Right)
-} else if(movement_dir == -1) {
-    Movable_Facing = 180;
-    Movable_Side = 180;
-}
-
-//constants
-Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>408</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if</functionname>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -75,23 +25,13 @@ Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>instance_exists(Obj_Player)</string>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -109,91 +49,107 @@ Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///if player is close by, move towards him
-dx = x - Obj_Player.x;
-dy = abs(y-Movable_Height/2 - (Obj_Player.y - Obj_Player.Movable_Height/2));
-if(dy &lt; 5*Tile_Size &amp;&amp; abs(dx) &lt; 6*Tile_Size &amp;&amp; 3*Tile_Size&lt;abs(dx))
-{
-    reachedPlayer=0;
-    if (dy &lt; 2.2*Tile_Size)
-    {
-        Movable_H_Speed = Enemy2_H_Speed;
-        last_movable_speed=Movable_H_Speed;
-    }
-    else if (dy &lt; 3.2*Tile_Size)
-    {
-        Movable_H_Speed= Enemy2_H_Speed/2;
-        last_movable_speed=Movable_H_Speed;
-    }
-    else
-    {
-        Movable_H_Speed = Enemy2_H_Speed/4;
-        last_movable_speed=Movable_H_Speed;
-    }
+            <string>///Create the Emitter
+emmiter = part_emitter_create(global.explosion_system);
+explosionCount = 3;
 
-    if (abs(dx) &lt; Movable_H_Speed)
-    {
-        Movable_H_Speed = abs(dx);
-        last_movable_speed=Movable_H_Speed;
-    }
-        
-    if(dx &gt; 0)
-    {
-        Control_Horizontal = -1;
-        last_control_Horizontal=Control_Horizontal;
-    }
-    else if(dx &lt; 0)
-    {
-        Control_Horizontal = +1;
-        last_control_Horizontal=Control_Horizontal;
-    }
-}
-else if (abs(dx)&lt;=3*Tile_Size)
-{
-    if (reachedPlayer==0)
-    {
-        Control_Horizontal=last_control_Horizontal;
-        Movable_H_Speed= last_movable_speed;
-        if (abs(dx)&lt;10)
-        {
-            reachedPlayer=1;
-        }
-    }
-    else
-    {
-        if (walk_delay==0)
-        {
-            walk_delay=max_walk_delay;
-            last_control_Horizontal*=(-1);
-            Control_Horizontal=last_control_Horizontal;
-            Movable_H_Speed= last_movable_speed;
-        }
-        else
-        {
-            walk_delay--;
-            Control_Horizontal=last_control_Horizontal;
-            Movable_H_Speed= last_movable_speed;
-        }
-    }
-}
+part_emitter_region(global.explosion_system, emmiter, x-16, x+16, y-16, y-16, ps_shape_ellipse, ps_distr_linear);
 </string>
           </argument>
         </arguments>
       </action>
       <action>
         <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Emitte
+part_emitter_burst(global.explosion_system, emmiter, global.villain_part, 40);
+</string>
+          </argument>
+        </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>201</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_create_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>Spr_Missile_Explosion_Dmg</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy Emitter
+part_emitter_destroy(global.explosion_system,emmiter);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>612</id>
@@ -206,11 +162,11 @@ else if (abs(dx)&lt;=3*Tile_Size)
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
-        <isnot>0</isnot>
+        <isnot>-1</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Movable_Side</string>
+            <string>explosionCount</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -238,13 +194,37 @@ else if (abs(dx)&lt;=3*Tile_Size)
       </action>
       <action>
         <libid>1</libid>
-        <id>542</id>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>explosionCount</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>explosionCount-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_sprite_transform</functionname>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -252,19 +232,33 @@ else if (abs(dx)&lt;=3*Tile_Size)
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <string>5</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Emitte
+part_emitter_burst(global.explosion_system, emmiter, global.villain_part, 40);
+</string>
           </argument>
         </arguments>
       </action>
@@ -284,20 +278,6 @@ else if (abs(dx)&lt;=3*Tile_Size)
       </action>
       <action>
         <libid>1</libid>
-        <id>421</id>
-        <kind>3</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>422</id>
         <kind>1</kind>
         <userelative>0</userelative>
@@ -312,13 +292,13 @@ else if (abs(dx)&lt;=3*Tile_Size)
       </action>
       <action>
         <libid>1</libid>
-        <id>542</id>
+        <id>301</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_sprite_transform</functionname>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -326,15 +306,7 @@ else if (abs(dx)&lt;=3*Tile_Size)
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <string>20</string>
           </argument>
           <argument>
             <kind>4</kind>

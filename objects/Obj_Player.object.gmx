@@ -442,7 +442,7 @@ if (Control_Damage == 1)
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="Obj_Enemy_Bullet1">
+    <event eventtype="4" ename="Obj_Enemy_Bullet3">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -470,7 +470,7 @@ if (Control_Damage == 0 &amp;&amp; Damage_Delay == 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Obj_Enemy_Bullet3">
+    <event eventtype="4" ename="Obj_Enemy_Bullet1">
       <action>
         <libid>1</libid>
         <id>603</id>
