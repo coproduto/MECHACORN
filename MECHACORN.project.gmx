@@ -102,11 +102,14 @@
     <object>objects\Obj_Enemy3_Arm</object>
     <object>objects\Obj_Intro_Player_Bullet</object>
     <object>objects\Obj_Credits</object>
+    <object>objects\Obj_Mecha_Sleep</object>
+    <object>objects\Obj_Intro_Player2</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Tl_Intro</timeline>
     <timeline>timelines\Tl_Intro2</timeline>
     <timeline>timelines\Tl_Intro3</timeline>
+    <timeline>timelines\Tl_Intro4</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\Room_Title</room>
