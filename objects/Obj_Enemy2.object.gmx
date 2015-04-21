@@ -41,6 +41,7 @@ reachedPlayer=0;
 
 //Animation
 image_speed=0;
+animationDelay=0;
 
 //directions
 if(movement_dir == 1) {
@@ -110,6 +111,14 @@ Movable_H_Speed = Enemy2_H_Speed; //Enemy Speed
           <argument>
             <kind>1</kind>
             <string>///if player is close by, move towards him
+
+if (animationDelay == 0)
+{
+    image_index = 1-image_index;
+    animationDelay = 3;
+}
+else animationDelay -= 1;
+
 dx = x - Obj_Player.x;
 dy = abs(y-Movable_Height/2 - (Obj_Player.y - Obj_Player.Movable_Height/2));
 if(dy &lt; 5*Tile_Size &amp;&amp; abs(dx) &lt; 6*Tile_Size &amp;&amp; 3*Tile_Size&lt;abs(dx))

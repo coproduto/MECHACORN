@@ -121,6 +121,7 @@
     <room>rooms\Room_Intro</room>
     <room>rooms\Room_Intro2</room>
     <room>rooms\Phase_1</room>
+    <room>rooms\Phase_2</room>
     <room>rooms\Phase_3</room>
     <room>rooms\Boss_Room</room>
     <room>rooms\Room_Victory</room>
